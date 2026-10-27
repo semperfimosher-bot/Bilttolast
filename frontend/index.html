@@ -2,42 +2,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilttolast</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-        html, body {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
 
-        body {
-            background: #000;
-        }
+    main {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      text-align: center;
+    }
 
-        .landing-image {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            display: block;
-        }
-    </style>
+    h1 {
+      font-size: clamp(2rem, 6vw, 4rem);
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: #ccc;
+      font-size: 1.1rem;
+    }
+
+    .hero-image {
+      display: block;
+      width: 100%;
+      max-width: 900px;
+      max-height: 70vh;
+      object-fit: contain;
+      border-radius: 12px;
+      margin-top: 24px;
+    }
+  </style>
 </head>
+
 <body>
+  <main>
+    <p>A website for Ben Emerson. More coming soon.</p>
 
     <img
-        class="landing-image"
-        src="Metallic Construction Coming Soon Splash.png"
-        alt="Welcome"
+      class="hero-image"
+      src="Metallic Construction Coming Soon Splash.png"
+      alt="Bilttolast featured picture"
     >
-
+  </main>
 </body>
 </html>
